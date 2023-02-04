@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+    <link rel="stylesheet" href="../landing.css">
+</head>
+
+<body>
+
+</body>
+<div class="container">
+    <p>welcome
+        <%=name %>,
+            <%= JSON.stringify(image).path %>,
+    </p>
+
+    <img src=" <%=JSON.stringify(image) %>" alt="%>" alt="image">
+    <p>
+
+    </p>
+
+
+    <div class="image">
+        <form action="/image" method="POST" enctype="multipart/form-data">
+            <input type="file" name="image">
+            <input type="submit" value="add profile">
+        </form>
+        <!-- <button class="signUP"><a href="index.ejs">sign up</a></button> -->
+
+
+    </div>
+</div>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="../signup.css ">
+</head>
+
+<body class="signUp ">
+    <div class="container ">
+        <div class="landing ">
+            <form action="/signUp" method="POST" enctype="multipart/form-data">
+
+                <input type="file" name="image" required>
+                <label for="email">email:</label>
+                <input type="email " id="email " placeholder="email " name="email" required>
+
+                <label for="password ">password:</label>
+                <input type="password" id="password " placeholder="password " minlength="4 " required name="password ">
+                <label for="password ">userName:</label>
+                <input type="text " id="userName " placeholder="username " minlength="5 " required name="userName ">
+
+                <button type="submit " value="create Account " id="createAccount ">create Account</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
